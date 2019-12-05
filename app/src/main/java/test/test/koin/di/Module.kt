@@ -9,15 +9,10 @@ import test.test.koin.model.Student
 val appModule: Module = module {
 
     //Defines a singleton of SchoolCourses
-    single {
-        SchoolCourse()
-    }
-
+    single { SchoolCourse() }
 
     //Defines a factory(Creates new instance every time)
-    factory {
-        Friend()
-    }
+    factory { Friend() }
 
-    Student()
+    factory { Student(get(), get()) }
 }

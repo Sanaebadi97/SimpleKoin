@@ -1,9 +1,11 @@
 package test.test.koin.model
 
-class Student() {
+class Student(val course: SchoolCourse, val friend: Friend) {
 
-    val course: SchoolCourse = SchoolCourse()
-    val friend: Friend = Friend()
+    fun beSmart() {
+        course.study()
+        friend.hangout()
+    }
 
 }
 

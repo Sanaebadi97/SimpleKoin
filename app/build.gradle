@@ -21,6 +21,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+
 }
 
 dependencies {
@@ -38,9 +40,5 @@ dependencies {
     implementation "org.koin:koin-androidx-scope:$koin_version"
 // Koin AndroidX ViewModel features
     implementation "org.koin:koin-androidx-viewmodel:$koin_version"
-// Koin AndroidX Experimental features
-    implementation "org.koin:koin-androidx-ext:$koin_version"
 
-    // Koin for Ktor Kotlin
-    implementation "org.koin:koin-ktor:$koin_version"
 }
